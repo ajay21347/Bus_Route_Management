@@ -1,0 +1,416 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+/* Theme Button */
+.theme-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Theme colors */
+.container.pink {
+  background: linear-gradient(135deg, #ffeaa7, #d38384);
+  color: #5e2b3c;
+}
+
+.container.blue {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #1e3a8a;
+}
+
+.container.green {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  color: #2d6a4f;
+}
+
+/* New Twilight Night theme */
+.container.twilight {
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  ); /* dark blues & teal shades */
+  color: #f0f8ff; /* soft white text */
+}
+
+/* Form styling */
+form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* default translucent card background */
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.5s;
+}
+
+/* Make form background adapt to theme */
+.container.pink form {
+  background-color: rgba(255, 230, 230, 0.85);
+}
+.container.blue form {
+  background-color: rgba(225, 245, 255, 0.85);
+}
+.container.green form {
+  background-color: rgba(230, 255, 230, 0.85);
+}
+.container.twilight form {
+  background-color: rgba(32, 58, 67, 0.85);
+}
+
+/* Route cards */
+.routes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.routes > div {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Card background adapts to theme */
+.container.pink .routes > div {
+  background-color: rgba(255, 230, 230, 0.85);
+}
+.container.blue .routes > div {
+  background-color: rgba(225, 245, 255, 0.85);
+}
+.container.green .routes > div {
+  background-color: rgba(230, 255, 230, 0.85);
+}
+.container.twilight .routes > div {
+  background-color: rgba(32, 58, 67, 0.85);
+  color: #f0f8ff;
+}
+
+/* Duration field */
+.duration-field input,
+.duration-field select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: #333;
+}
+
+.container.twilight .duration-field input,
+.container.twilight .duration-field select {
+  background-color: rgba(240, 248, 255, 0.15);
+  color: #f0f8ff;
+  border: 1px solid #5f9ea0;
+}
+
+.duration-field input:focus,
+.duration-field select:focus {
+  outline: none;
+  border-color: #2f80ed;
+  box-shadow: 0 0 6px rgba(47, 128, 237, 0.3);
+}
+
+/* Theme-specific focus */
+.container.pink .duration-field input:focus,
+.container.pink .duration-field select:focus {
+  border-color: #af4261;
+  box-shadow: 0 0 6px rgba(175, 66, 97, 0.4);
+}
+
+.container.blue .duration-field input:focus,
+.container.blue .duration-field select:focus {
+  border-color: #2f80ed;
+  box-shadow: 0 0 6px rgba(47, 128, 237, 0.4);
+}
+
+.container.green .duration-field input:focus,
+.container.green .duration-field select:focus {
+  border-color: #56ab2f;
+  box-shadow: 0 0 6px rgba(86, 171, 47, 0.4);
+}
+
+.container.twilight .duration-field input:focus,
+.container.twilight .duration-field select:focus {
+  border-color: #5f9ea0;
+  box-shadow: 0 0 6px rgba(95, 158, 160, 0.5);
+}
+
+/* Add Route button styling */
+button[type="submit"] {
+  background-color: #af4261;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.container.blue button[type="submit"] {
+  background-color: #2f80ed;
+}
+.container.green button[type="submit"] {
+  background-color: #56ab2f;
+}
+.container.twilight button[type="submit"] {
+  background-color: #5f9ea0;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+  flex: 1 1 180px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+}
+
+/* Route Cards */
+.routes {
+  display: grid;
+  gap: 18px;
+}
+
+.route-card {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.route-card:hover {
+  transform: translateY(-3px);
+}
+
+.route-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.route-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+button.delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+button.delete-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Themes */
+
+/* 🌅 Pink Sunset */
+.container.pink {
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+}
+.container.pink h1 {
+  color: #af4261;
+}
+.container.pink form input:focus {
+  border-color: #af4261;
+  box-shadow: 0 0 6px rgba(175, 66, 97, 0.4);
+}
+.container.pink form button {
+  background: #af4261;
+}
+.container.pink .route-card {
+  background: linear-gradient(135deg, #ffffff, #ffe5ec);
+}
+.container.pink .delete-btn {
+  background: #ff4b5c;
+}
+
+/* 💙 Ocean Breeze */
+.container.blue {
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+.container.blue h1 {
+  color: #2f80ed;
+}
+.container.blue form input:focus {
+  border-color: #2f80ed;
+  box-shadow: 0 0 6px rgba(47, 128, 237, 0.4);
+}
+.container.blue form button {
+  background: #2f80ed;
+}
+.container.blue .route-card {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+}
+.container.blue .delete-btn {
+  background: #007bff;
+}
+
+/* 🌿 Emerald Mist */
+.container.green {
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+}
+.container.green h1 {
+  color: #2f6627;
+}
+.container.green form input:focus {
+  border-color: #56ab2f;
+  box-shadow: 0 0 6px rgba(86, 171, 47, 0.4);
+}
+.container.green form button {
+  background: #56ab2f;
+}
+.container.green .route-card {
+  background: linear-gradient(135deg, #ffffff, #e7ffe7);
+}
+.container.green .delete-btn {
+  background: #48b36d;
+}
+
+.duration-field {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 200px;
+}
+
+.duration-field input,
+.duration-field select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.duration-field input:focus,
+.duration-field select:focus {
+  outline: none;
+  border-color: #2f80ed; /* default focus color, will adapt with theme */
+  box-shadow: 0 0 6px rgba(47, 128, 237, 0.3);
+}
+
+/* Match select background and font with input */
+.duration-field select {
+  background: white;
+  cursor: pointer;
+}
+
+/* Optional: hover effect for select */
+.duration-field select:hover {
+  border-color: #aaa;
+}
+
+/* Theme-adaptive focus colors */
+.container.pink .duration-field input:focus,
+.container.pink .duration-field select:focus {
+  border-color: #af4261;
+  box-shadow: 0 0 6px rgba(175, 66, 97, 0.4);
+}
+
+.container.blue .duration-field input:focus,
+.container.blue .duration-field select:focus {
+  border-color: #2f80ed;
+  box-shadow: 0 0 6px rgba(47, 128, 237, 0.4);
+}
+
+.container.green .duration-field input:focus,
+.container.green .duration-field select:focus {
+  border-color: #56ab2f;
+  box-shadow: 0 0 6px rgba(86, 171, 47, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+  form input,
+  form button {
+    width: 100%;
+  }
+}
