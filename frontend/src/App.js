@@ -9,8 +9,8 @@ function App() {
     name: "",
     source: "",
     destination: "",
-    durationValue: "",
-    durationUnit: "mins", // default unit
+    durationHr: "",
+    durationMin: "",
     stops: "",
   });
   const [theme, setTheme] = useState("pink"); // default theme
@@ -37,17 +37,16 @@ function App() {
       ? formData.stops.split(",").map((stop) => stop.trim())
       : [];
 
-    // Convert duration to minutes
-    let numericDuration = Number(formData.durationValue);
-    if (formData.durationUnit === "hrs") {
-      numericDuration *= 60; // convert hours to minutes
-    }
+    // Convert hours + minutes → total minutes
+    const totalMinutes =
+      (parseInt(formData.durationHr || 0) * 60) +
+      parseInt(formData.durationMin || 0);
 
     const payload = {
       name: formData.name,
       source: formData.source,
       destination: formData.destination,
-      duration: numericDuration,
+      duration: totalMinutes,
       stops: stopsArray,
     };
 
@@ -59,8 +58,8 @@ function App() {
           name: "",
           source: "",
           destination: "",
-          durationValue: "",
-          durationUnit: "mins",
+          durationHr: "",
+          durationMin: "",
           stops: "",
         });
       })
@@ -117,25 +116,27 @@ function App() {
           required
         />
 
-        {/* Duration input with unit selection */}
+        {/* Duration: Hours + Minutes */}
         <div className="duration-field">
           <input
             type="number"
-            name="durationValue"
-            placeholder="Duration"
-            value={formData.durationValue}
+            name="durationHr"
+            placeholder="Hours"
+            value={formData.durationHr}
             onChange={handleChange}
-            required
             min="0"
           />
-          <select
-            name="durationUnit"
-            value={formData.durationUnit}
+          <span className="time-label">hr</span>
+          <input
+            type="number"
+            name="durationMin"
+            placeholder="Minutes"
+            value={formData.durationMin}
             onChange={handleChange}
-          >
-            <option value="mins">Minutes</option>
-            <option value="hrs">Hours</option>
-          </select>
+            min="0"
+            max="59"
+          />
+          <span className="time-label">min</span>
         </div>
 
         <input

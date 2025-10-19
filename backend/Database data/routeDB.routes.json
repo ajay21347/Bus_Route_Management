@@ -1,0 +1,288 @@
+[{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4878f"
+  },
+  "name": "Dehradun to Mussoorie",
+  "source": "Dehradun",
+  "destination": "Mussoorie",
+  "duration": 75,
+  "stops": [
+    "Dehradun ISBT",
+    "Rajpur",
+    "Mussoorie Library"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48790"
+  },
+  "name": "Dehradun to Rishikesh",
+  "source": "Dehradun",
+  "destination": "Rishikesh",
+  "duration": 90,
+  "stops": [
+    "Dehradun ISBT",
+    "Doiwala",
+    "Rishikesh Bus Stand"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48791"
+  },
+  "name": "Rishikesh to Haridwar",
+  "source": "Rishikesh",
+  "destination": "Haridwar",
+  "duration": 60,
+  "stops": [
+    "Rishikesh Bus Stand",
+    "Nepali Farm",
+    "Haridwar ISBT"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48792"
+  },
+  "name": "Dehradun to Haridwar",
+  "source": "Dehradun",
+  "destination": "Haridwar",
+  "duration": 105,
+  "stops": [
+    "Dehradun ISBT",
+    "Nepali Farm",
+    "Haridwar ISBT"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48793"
+  },
+  "name": "Haridwar to Roorkee",
+  "source": "Haridwar",
+  "destination": "Roorkee",
+  "duration": 45,
+  "stops": [
+    "Haridwar ISBT",
+    "Jwalapur",
+    "Roorkee"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48794"
+  },
+  "name": "Dehradun to Nainital",
+  "source": "Dehradun",
+  "destination": "Nainital",
+  "duration": 390,
+  "stops": [
+    "Dehradun ISBT",
+    "Rudrapur",
+    "Haldwani",
+    "Nainital"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48795"
+  },
+  "name": "Rishikesh to Kedarnath",
+  "source": "Rishikesh",
+  "destination": "Kedarnath",
+  "duration": 540,
+  "stops": [
+    "Rishikesh",
+    "Rudraprayag",
+    "Gaurikund",
+    "Kedarnath"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48796"
+  },
+  "name": "Rishikesh to Badrinath",
+  "source": "Rishikesh",
+  "destination": "Badrinath",
+  "duration": 600,
+  "stops": [
+    "Rishikesh",
+    "Joshimath",
+    "Badrinath"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48797"
+  },
+  "name": "Rishikesh to Joshimath",
+  "source": "Rishikesh",
+  "destination": "Joshimath",
+  "duration": 480,
+  "stops": [
+    "Rishikesh",
+    "Srinagar",
+    "Chamoli",
+    "Joshimath"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48798"
+  },
+  "name": "Haldwani to Nainital",
+  "source": "Haldwani",
+  "destination": "Nainital",
+  "duration": 90,
+  "stops": [
+    "Haldwani",
+    "Kathgodam",
+    "Bhowali",
+    "Nainital"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac48799"
+  },
+  "name": "Ranikhet to Almora",
+  "source": "Ranikhet",
+  "destination": "Almora",
+  "duration": 120,
+  "stops": [
+    "Ranikhet",
+    "Dwarahat",
+    "Almora"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879a"
+  },
+  "name": "Dehradun to Chakrata",
+  "source": "Dehradun",
+  "destination": "Chakrata",
+  "duration": 150,
+  "stops": [
+    "Dehradun ISBT",
+    "Vikasnagar",
+    "Kalsi",
+    "Chakrata"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879b"
+  },
+  "name": "Haridwar to Rishikesh",
+  "source": "Haridwar",
+  "destination": "Rishikesh",
+  "duration": 70,
+  "stops": [
+    "Haridwar ISBT",
+    "Nepali Farm",
+    "Rishikesh"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879c"
+  },
+  "name": "Rudrapur to Haldwani",
+  "source": "Rudrapur",
+  "destination": "Haldwani",
+  "duration": 75,
+  "stops": [
+    "Rudrapur",
+    "Lalkuan",
+    "Haldwani"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879d"
+  },
+  "name": "Haldwani to Almora",
+  "source": "Haldwani",
+  "destination": "Almora",
+  "duration": 210,
+  "stops": [
+    "Haldwani",
+    "Bhimtal",
+    "Kainchi Dham",
+    "Almora"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879e"
+  },
+  "name": "Dehradun to Tehri",
+  "source": "Dehradun",
+  "destination": "Tehri",
+  "duration": 180,
+  "stops": [
+    "Dehradun",
+    "Narendranagar",
+    "Chamba",
+    "New Tehri"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac4879f"
+  },
+  "name": "Pauri to Kotdwar",
+  "source": "Pauri",
+  "destination": "Kotdwar",
+  "duration": 150,
+  "stops": [
+    "Pauri",
+    "Satpuli",
+    "Kotdwar"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac487a0"
+  },
+  "name": "Dehradun to Yamunotri",
+  "source": "Dehradun",
+  "destination": "Yamunotri",
+  "duration": 480,
+  "stops": [
+    "Dehradun",
+    "Barkot",
+    "Hanuman Chatti",
+    "Yamunotri"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac487a1"
+  },
+  "name": "Mussoorie to Dhanaulti",
+  "source": "Mussoorie",
+  "destination": "Dhanaulti",
+  "duration": 90,
+  "stops": [
+    "Mussoorie",
+    "Suakholi",
+    "Dhanaulti"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68f4fd20155709bcaac487a2"
+  },
+  "name": "Tehri to Uttarkashi",
+  "source": "Tehri",
+  "destination": "Uttarkashi",
+  "duration": 210,
+  "stops": [
+    "Tehri",
+    "Chinyalisaur",
+    "Uttarkashi"
+  ]
+}]

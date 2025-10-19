@@ -353,36 +353,30 @@ button.delete-btn:hover {
 
 .duration-field {
   display: flex;
-  gap: 10px;
-  flex: 1 1 200px;
+  align-items: center;
+  gap: 8px;
 }
 
-.duration-field input,
-.duration-field select {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+.duration-field input {
+  width: 90px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
   font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.9);
   transition: 0.3s;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.duration-field input:focus,
-.duration-field select:focus {
+.duration-field input:focus {
   outline: none;
-  border-color: #2f80ed; /* default focus color, will adapt with theme */
-  box-shadow: 0 0 6px rgba(47, 128, 237, 0.3);
+  border-color: #888;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Match select background and font with input */
-.duration-field select {
-  background: white;
-  cursor: pointer;
-}
-
-/* Optional: hover effect for select */
-.duration-field select:hover {
-  border-color: #aaa;
+.time-label {
+  font-weight: 500;
+  color: #444;
 }
 
 /* Theme-adaptive focus colors */
